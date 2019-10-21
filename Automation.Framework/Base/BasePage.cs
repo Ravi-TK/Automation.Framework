@@ -16,6 +16,13 @@ namespace Automation.Framework.Base
             Driver.Browser = driver;
         }
 
+        /// <summary>
+        /// Create a instance of Selenium webElement 
+        /// </summary>
+        /// <param name="locator">Locator path</param>
+        /// <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+        /// <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
+        /// <returns> an instance of the webelement</returns>
         public static IWebElement WaitTillElementExist(string locator, ElementLocator elementLocatorType = ElementLocator.Xpath, int TimeOutForFindingElement = 10)
         {
             var wait = new WebDriverWait(Driver.Browser, TimeSpan.FromSeconds(TimeOutForFindingElement));
@@ -56,6 +63,13 @@ namespace Automation.Framework.Base
             return _webElement;
         }
 
+        /// <summary>
+        /// Create a instance of Selenium webElement 
+        /// </summary>
+        /// <param name="locator">Locator path</param>
+        /// <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+        /// <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
+        /// <returns> an instance of the webelement</returns>
         public static IWebElement WaitTillElementDisplayed(string locator, ElementLocator elementLocatorType = ElementLocator.Xpath, int TimeOutForFindingElement = 10)
         {
 
