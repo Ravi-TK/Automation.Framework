@@ -12,7 +12,10 @@ SeleniumExtras.WaitHelpers waits for a element for x seconds before it is displa
 Please see exmaple project -> Page Class for implementation. 
 
 To create a WebElement -
-public IWebElement <ElementName> => WaitTillElementDisplayed(Locator_path, Locator_Stratergy_Type, number of seconds to wait for the element); 
+
+        public IWebElement <ElementName> => WaitTillElementDisplayed((Locator_path,Locator_Stratergy_Type, number of seconds to wait for the element); 
+
+
 In above we can look up for the web element by Id,Css,Name,LinkText,PartialLinkText,Xpath,ClassName and Tag
 
 
