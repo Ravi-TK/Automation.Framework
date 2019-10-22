@@ -3,6 +3,8 @@
 This framework is built on top of selenium webdriver api and unity. The framework uses selenium to offer helper methods which can control 
 various web form elements. 
 
+Please see example project for the implementation of helper methods. 
+
 Unity is responsible for creating and resolving the page objects. This mitigates the need for passing around page objects in methods to 
 carry an operation. Please see the example project -> hooks & Page Class to see the implementation. 
 
