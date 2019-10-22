@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.1.21-beta\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.1.21-beta\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
+    <Import Project="$(NuGetPackageRoot)specflow.mstest\3.1.21-beta\build\SpecFlow.MsTest.targets" Condition="Exists('$(NuGetPackageRoot)specflow.mstest\3.1.21-beta\build\SpecFlow.MsTest.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\77.0.3865.4000\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\77.0.3865.4000\build\Selenium.WebDriver.ChromeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\16.2.0\build\netstandard1.0\Microsoft.CodeCoverage.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\16.2.0\build\netstandard1.0\Microsoft.CodeCoverage.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0\Microsoft.NET.Test.Sdk.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0\Microsoft.NET.Test.Sdk.targets')" />
+    <Import Project="$(NuGetPackageRoot)coverlet.collector\1.0.1\build\netstandard1.0\coverlet.collector.targets" Condition="Exists('$(NuGetPackageRoot)coverlet.collector\1.0.1\build\netstandard1.0\coverlet.collector.targets')" />
+  </ImportGroup>
+</Project>
