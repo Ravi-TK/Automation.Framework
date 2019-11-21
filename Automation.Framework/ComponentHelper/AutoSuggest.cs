@@ -8,6 +8,13 @@ namespace Automation.Framework.ComponentHelper
 {
     public class AutoSuggest : IAutoSuggestHelper
     {
+        /// <summary>
+        /// Selects an item from a Autosuggest drop down
+        /// </summary>
+        /// <param name="dropDownList">dropdown webelement</param>
+        /// <param name="DropDownListEntriesLocator">item listing index in drop down after entering search char</param>
+        /// <param name="searchChar">search characters</param>
+        /// <param name="itemToClick"> item to click </param>
         public void SelectItemInList(IWebElement dropDownList, string DropDownListEntriesLocator, string searchChar, string itemToClick)
         {
             //supply initial char

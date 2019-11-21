@@ -126,6 +126,11 @@ namespace Automation.Framework.Core
             BrowserWait = new WebDriverWait(Browser, TimeSpan.FromSeconds(defaultTimeOut));
         }
 
+        /// <summary>
+        /// Captures Screenshot wand has specified filename 
+        /// </summary>
+        /// <param name="filename"> Screenshot FileName </param>
+        /// <returns>Returns the FielName</returns>
         public static string TakeScreenShot(string filename)
         {
             string rootpath = Directory.GetCurrentDirectory();
@@ -143,6 +148,10 @@ namespace Automation.Framework.Core
             return filename;
         }
 
+        /// <summary>
+        /// Create a serilog Instance 
+        /// </summary>
+        /// <param name="fileName">log File name </param>
         public static void CreateLog(string fileName = "Log .txt ")
         {
             string rootpath = Directory.GetCurrentDirectory();
@@ -158,6 +167,9 @@ namespace Automation.Framework.Core
              .CreateLogger();
         }
 
+        /// <summary>
+        /// Stops & Quits current WebDriver instance
+        /// </summary>
         public static void StopBrowser()
         {
             Browser.Quit();

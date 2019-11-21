@@ -1,5 +1,8 @@
 ﻿namespace Automation.Framework.Core
 {
+    /// <summary>
+    /// Browser Types 
+    /// </summary>
     public enum BrowserTypes
     {
         Firefox,

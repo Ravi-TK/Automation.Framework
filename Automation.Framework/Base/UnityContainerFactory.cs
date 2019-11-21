@@ -11,6 +11,10 @@ namespace Automation.Framework.Base
             _unityContainer = new UnityContainer();
         }
 
+        /// <summary>
+        /// Retrieves existing unity container 
+        /// </summary>
+        /// <returns></returns>
         public static IUnityContainer GetContainer()
         {
             return _unityContainer;

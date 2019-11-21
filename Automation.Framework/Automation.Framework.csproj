@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Authors>Ravi Kota</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2.8</Version>
+    <Version>1.0.2.10</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>This Package offers a simple and elgeant framework to use selenium to control web form elements.</Description>
   </PropertyGroup>

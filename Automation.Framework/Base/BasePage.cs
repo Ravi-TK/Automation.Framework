@@ -9,6 +9,9 @@ namespace Automation.Framework.Base
 {
     public class BasePage
     {
+        /// <summary>
+        /// Helper Componnents object
+        /// </summary>
         public Helpers Helper = new Helpers();
         private static IWebElement _webElement;
 
@@ -111,6 +114,12 @@ namespace Automation.Framework.Base
             return _webElement;
         }
 
+        /// <summary>
+        /// Create a instance of Selenium webElement when element staleness is gone 
+        /// </summary>
+        /// <param name="locator">Locator path</param>
+        /// <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+        /// <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
         public static void WaitTillElementStalenessOf(string locator, ElementLocator elementLocatorType = ElementLocator.Xpath, int TimeOutForFindingElement = 10)
         {
             var wait = new WebDriverWait(Driver.Browser, TimeSpan.FromSeconds(TimeOutForFindingElement));
@@ -150,19 +159,69 @@ namespace Automation.Framework.Base
         }
     }
 
+    /// <summary>
+    ///  Helper Componnents 
+    /// </summary>
     public class Helpers
     {
-        public AutoSuggest AutoSuggestHelper = new AutoSuggest();
-        public MouseAction MouseActionHelper = new MouseAction();
-        public KeyBoardAction KeyBoardActionHelper = new KeyBoardAction();
-        public Browser BrowserHelper = new Browser();
-        public Button ButtonHelper = new Button();
-        public CheckBox CheckBoxHelper = new CheckBox();
-        public ComboBox ComboBoxHelper = new ComboBox();
-        public JavascriptHelp JavaScriptHelper = new JavascriptHelp();
-        public Label LabelHelper = new Label();
-        public Link LinkHelper = new Link();
-        public RadioButton RadioButtonHelper = new RadioButton();
-        public Text TextBoxHelper = new Text();
+        /// <summary>
+        /// Autosuggest Helper components
+        /// </summary>
+        private readonly AutoSuggest AutoSuggestHelper = new AutoSuggest();
+
+        /// <summary>
+        /// Mouse Action Helper components  
+        /// </summary>
+        private readonly MouseAction MouseActionHelper = new MouseAction();
+
+        /// <summary>
+        /// KeyBoard Action Helper components 
+        /// </summary>
+        private readonly KeyBoardAction KeyBoardActionHelper = new KeyBoardAction();
+
+        /// <summary>
+        /// Browser Helper Components 
+        /// </summary>
+        private readonly Browser BrowserHelper = new Browser();
+
+        /// <summary>
+        /// All Button Helper Component
+        /// </summary>
+        private readonly Button ButtonHelper = new Button();
+
+        /// <summary>
+        /// CheckBox Helper Components
+        /// </summary>
+        private readonly CheckBox CheckBoxHelper = new CheckBox();
+
+        /// <summary>
+        /// ComboBox Helper Components
+        /// </summary>
+        private readonly ComboBox ComboBoxHelper = new ComboBox();
+
+        /// <summary>
+        /// JavaScript Helper Components 
+        /// </summary>
+        private readonly JavascriptHelp JavaScriptHelper = new JavascriptHelp();
+
+        /// <summary>
+        /// Label Helper Components
+        /// </summary>
+        private readonly  Label LabelHelper = new Label();
+
+        /// <summary>
+        /// Link Helper Components 
+        /// </summary>
+        private readonly Link LinkHelper = new Link();
+
+        /// <summary>
+        /// Radio Button Helper Components
+        /// </summary>
+        private readonly RadioButton RadioButtonHelper = new RadioButton();
+
+        /// <summary>
+        /// TextBox Helper Components
+        /// </summary>
+        private readonly Text TextBoxHelper = new Text();
     }
 }
