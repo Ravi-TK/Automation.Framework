@@ -1,8 +1,5 @@
 ﻿using Automation.Framework.ComponentHelper.Interfaces;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.ComponentHelper
 {

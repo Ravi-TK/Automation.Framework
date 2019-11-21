@@ -1,11 +1,6 @@
 ﻿using Automation.Framework.Base;
-using Automation.Framework.Core;
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Unity;
 
 namespace Automation.Framework.Test.Tests
@@ -43,7 +38,6 @@ namespace Automation.Framework.Test.Tests
 
             string resulttxt = _textBoxPage.Helper.TextBoxHelper.GetTextBoxText(_textBoxPage.checkboxResultWebElement);
             Assert.AreEqual(resulttxt, "FirstName=Test1&LastName=Test2 ");
-
         }
 
         //[TestMethod]
@@ -83,6 +77,5 @@ namespace Automation.Framework.Test.Tests
             string txt = _textBoxPage.Helper.TextBoxHelper.GetTextBoxText(_textBoxPage.firstNameTextboxWebelement);
             Assert.AreEqual(txt, "");
         }
-
     }
 }

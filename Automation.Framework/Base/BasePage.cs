@@ -4,20 +4,21 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
+
 namespace Automation.Framework.Base
 {
     public class BasePage
     {
         public Helpers Helper = new Helpers();
         private static IWebElement _webElement;
-       
+
         public BasePage(IWebDriver driver)
         {
             Driver.Browser = driver;
         }
 
         /// <summary>
-        /// Create a instance of Selenium webElement 
+        /// Create a instance of Selenium webElement
         /// </summary>
         /// <param name="locator">Locator path</param>
         /// <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
@@ -64,7 +65,7 @@ namespace Automation.Framework.Base
         }
 
         /// <summary>
-        /// Create a instance of Selenium webElement 
+        /// Create a instance of Selenium webElement
         /// </summary>
         /// <param name="locator">Locator path</param>
         /// <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
@@ -72,7 +73,6 @@ namespace Automation.Framework.Base
         /// <returns> an instance of the webelement</returns>
         public static IWebElement WaitTillElementDisplayed(string locator, ElementLocator elementLocatorType = ElementLocator.Xpath, int TimeOutForFindingElement = 10)
         {
-
             var wait = new WebDriverWait(Driver.Browser, TimeSpan.FromSeconds(TimeOutForFindingElement));
 
             if (elementLocatorType == ElementLocator.Xpath)
@@ -148,7 +148,6 @@ namespace Automation.Framework.Base
                 wait.Until(ExpectedConditions.StalenessOf(Driver.Browser.FindElement(By.ClassName(locator))));
             }
         }
-
     }
 
     public class Helpers

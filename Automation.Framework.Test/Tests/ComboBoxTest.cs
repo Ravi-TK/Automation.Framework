@@ -2,9 +2,6 @@
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Unity;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.Test.Tests
 {
@@ -22,7 +19,7 @@ namespace Automation.Framework.Test.Tests
             _comboBoxPage.Helper.BrowserHelper.SwitchToWindow(1);
             _comboBoxPage.Helper.BrowserHelper.SwitchToFrame(_comboBoxPage.demoFrameWebElement);
 
-            _comboBoxPage.Helper.ComboBoxHelper.SelectElementByIndex(_comboBoxPage.comoboBoxWebElement,2);
+            _comboBoxPage.Helper.ComboBoxHelper.SelectElementByIndex(_comboBoxPage.comoboBoxWebElement, 2);
             _comboBoxPage.Helper.BrowserHelper.SwitchToParent();
         }
 
@@ -61,10 +58,9 @@ namespace Automation.Framework.Test.Tests
             _comboBoxPage.Helper.BrowserHelper.SwitchToWindow(1);
             _comboBoxPage.Helper.BrowserHelper.SwitchToFrame(_comboBoxPage.demoFrameWebElement);
 
-            bool cmbBoxenabled=_comboBoxPage.Helper.ComboBoxHelper.IsComboBoxEnabled(_comboBoxPage.comoboBoxWebElement);
+            bool cmbBoxenabled = _comboBoxPage.Helper.ComboBoxHelper.IsComboBoxEnabled(_comboBoxPage.comoboBoxWebElement);
             Assert.IsTrue(cmbBoxenabled);
             _comboBoxPage.Helper.BrowserHelper.SwitchToParent();
-
         }
     }
 }

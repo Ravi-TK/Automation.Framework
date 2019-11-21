@@ -2,9 +2,6 @@
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Unity;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.Test.Tests
 {
@@ -20,7 +17,7 @@ namespace Automation.Framework.Test.Tests
             _labelPage.Helper.BrowserHelper.BrowserMaximise();
             _labelPage.Helper.BrowserHelper.SwitchToFrame(_labelPage.demoFrameWebElement);
 
-            bool labelEnabled =_labelPage.Helper.LabelHelper.IsLabelEnabled(_labelPage.OtherLabelwebElement);
+            bool labelEnabled = _labelPage.Helper.LabelHelper.IsLabelEnabled(_labelPage.OtherLabelwebElement);
             Assert.IsTrue(labelEnabled);
         }
 
@@ -46,9 +43,5 @@ namespace Automation.Framework.Test.Tests
             bool labelSelected = _labelPage.Helper.CheckBoxHelper.IsCheckboxChecked(_labelPage.OtherLabelChkWebElement);
             Assert.IsTrue(labelSelected);
         }
-
-
-
-
     }
 }

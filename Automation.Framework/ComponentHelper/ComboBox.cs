@@ -1,15 +1,13 @@
 ﻿using Automation.Framework.ComponentHelper.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.ComponentHelper
 {
     public class ComboBox : IComboBoxHelper
     {
         private static SelectElement select;
+
         public bool IsComboBoxEnabled(IWebElement element)
         {
             return element.Enabled;

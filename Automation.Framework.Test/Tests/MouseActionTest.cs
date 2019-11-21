@@ -3,9 +3,6 @@ using Automation.Framework.Core;
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Unity;
 
 namespace Automation.Framework.Test.Tests
@@ -56,7 +53,5 @@ namespace Automation.Framework.Test.Tests
             Assert.AreEqual(txt, "The paragraph was double-clicked.");
             _mouseActionPage.Helper.JavaScriptHelper.ClickOkOnPopup();
         }
-
-
     }
 }

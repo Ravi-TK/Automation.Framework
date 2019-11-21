@@ -1,10 +1,7 @@
 ﻿using Automation.Framework.ComponentHelper.Interfaces;
 using Automation.Framework.Core;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 
 namespace Automation.Framework.ComponentHelper
 {
@@ -70,7 +67,6 @@ namespace Automation.Framework.ComponentHelper
             {
                 Driver.Browser.SwitchTo().Window(windowids[i]);
                 Driver.Browser.Close();
-               
             }
             Driver.Browser.SwitchTo().Window(windowids[0]);
         }
@@ -79,6 +75,5 @@ namespace Automation.Framework.ComponentHelper
         {
             Driver.Browser.SwitchTo().Frame(frameElement);
         }
-
     }
 }

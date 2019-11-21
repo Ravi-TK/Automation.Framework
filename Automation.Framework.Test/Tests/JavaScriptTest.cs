@@ -1,12 +1,8 @@
-﻿using Automation.Framework.Test.Pages;
+﻿using Automation.Framework.Base;
+using Automation.Framework.Core;
+using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Unity;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Automation.Framework.Base;
-using Automation.Framework.Core;
-using OpenQA.Selenium;
 
 namespace Automation.Framework.Test.Tests
 {
@@ -106,6 +102,5 @@ namespace Automation.Framework.Test.Tests
             string popUpTxt = _javascriptPage.Helper.LabelHelper.GetLabelText(_javascriptPage.popUpPromptResultWebElement);
             Assert.AreEqual(popUpTxt, "Hello Test!! How are you today?");
         }
-
     }
 }

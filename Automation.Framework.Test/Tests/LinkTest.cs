@@ -1,10 +1,7 @@
-﻿using Automation.Framework.Test.Pages;
+﻿using Automation.Framework.Base;
+using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Unity;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Automation.Framework.Base;
 
 namespace Automation.Framework.Test.Tests
 {
@@ -46,6 +43,5 @@ namespace Automation.Framework.Test.Tests
             bool linkClikced = _linkPage.titleAferLinkCLickedWebElement.Displayed;
             Assert.IsTrue(linkClikced);
         }
-
     }
 }
