@@ -2,9 +2,6 @@
 using Automation.Framework.Core;
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Unity;
 
 namespace Automation.Framework.Test.Tests
@@ -24,7 +21,7 @@ namespace Automation.Framework.Test.Tests
             _checkBoxPage.Helper.BrowserHelper.SwitchToFrame(_checkBoxPage.demoFrameWebElement);
             _checkBoxPage.Helper.CheckBoxHelper.ClickCheckBox(_checkBoxPage.checkboxCarWebElement);
             _checkBoxPage.Helper.ButtonHelper.ClickButton(_checkBoxPage.submitButtonWebelement);
-            string result =_checkBoxPage.Helper.TextBoxHelper.GetTextBoxText(_checkBoxPage.checkboxResultWebElement);
+            string result = _checkBoxPage.Helper.TextBoxHelper.GetTextBoxText(_checkBoxPage.checkboxResultWebElement);
             Assert.IsTrue(result.Contains("Car"));
             Driver.Browser.Close();
             _checkBoxPage.Helper.BrowserHelper.SwitchToWindow(0);
@@ -42,7 +39,6 @@ namespace Automation.Framework.Test.Tests
             //Assert.AreEqual(chkTxt, " I have a car");
             //Driver.Browser.Close();
             //_checkBoxPage.Helper.BrowserHelper.SwitchToWindow(0);
-
         }
 
         [TestMethod]
@@ -54,11 +50,10 @@ namespace Automation.Framework.Test.Tests
             _checkBoxPage.Helper.BrowserHelper.SwitchToWindow(1);
             _checkBoxPage.Helper.BrowserHelper.SwitchToFrame(_checkBoxPage.demoFrameWebElement);
             _checkBoxPage.Helper.CheckBoxHelper.ClickCheckBox(_checkBoxPage.checkboxCarWebElement);
-            bool chkchecked=_checkBoxPage.Helper.CheckBoxHelper.IsCheckboxChecked(_checkBoxPage.checkboxCarWebElement);
+            bool chkchecked = _checkBoxPage.Helper.CheckBoxHelper.IsCheckboxChecked(_checkBoxPage.checkboxCarWebElement);
             Assert.IsTrue(chkchecked);
             Driver.Browser.Close();
-           _checkBoxPage.Helper.BrowserHelper.SwitchToWindow(0);
-
+            _checkBoxPage.Helper.BrowserHelper.SwitchToWindow(0);
         }
 
         [TestMethod]
@@ -73,8 +68,6 @@ namespace Automation.Framework.Test.Tests
             Assert.IsTrue(chkenabled);
             Driver.Browser.Close();
             _checkBoxPage.Helper.BrowserHelper.SwitchToWindow(0);
-
         }
-
     }
 }

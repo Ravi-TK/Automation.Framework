@@ -1,15 +1,15 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Opera;
+using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using Serilog;
 using System;
 using System.IO;
-using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
-
 
 namespace Automation.Framework.Core
 {
@@ -50,46 +50,80 @@ namespace Automation.Framework.Core
             }
         }
 
-        public static void StartBrowser(BrowserTypes browserType = BrowserTypes.Firefox, int defaultTimeOut = 30)
+        /// <summary>
+        /// Creates an istance of selected browser
+        /// </summary>
+        /// <param name="browserType"> Type of Browser user wants to create </param>
+        /// <param name="defaultTimeOut">Time until the webdriver should try to create an instance of webdriver</param>
+        /// <param name="browserOptions"> Options for the browser </param>
+        public static void StartBrowser(BrowserTypes browserType = BrowserTypes.Firefox, int defaultTimeOut = 30, object browserOptions = null)
         {
             switch (browserType)
             {
                 case BrowserTypes.Firefox:
-                    Browser = new FirefoxDriver();
+                    if (browserOptions != null)
+                        Browser = new FirefoxDriver((FirefoxOptions)browserOptions);
+                    else
+                        Browser = new FirefoxDriver();
                     break;
+
+                case BrowserTypes.FirefoxHeadless:
+                    ((FirefoxOptions)browserOptions).AddArguments("--headless");
+                    Browser = new FirefoxDriver((FirefoxOptions)browserOptions);
+                    break;
+
                 case BrowserTypes.InternetExplorer:
-                    Browser = new InternetExplorerDriver(GetIEOptions());
+                    if (browserOptions != null)
+                        Browser = new InternetExplorerDriver((InternetExplorerOptions)browserOptions);
+                    else
+                        Browser = new InternetExplorerDriver();
                     break;
+
                 case BrowserTypes.Chrome:
-                    Browser = new ChromeDriver();
+                    if (browserOptions != null)
+                        Browser = new ChromeDriver((ChromeOptions)browserOptions);
+                    else
+                        Browser = new ChromeDriver();
                     break;
+
                 case BrowserTypes.ChromeHeadless:
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArgument("--headless");
-                    chromeOptions.AddArgument("disable-gpu");
-                    Browser = new ChromeDriver(chromeOptions);
+                    if (browserOptions != null)
+                    {
+                        ((ChromeOptions)browserOptions).AddArgument("--headless");
+                        ((ChromeOptions)browserOptions).AddArgument("disable-gpu");
+                    }
+                    else
+                    {
+                        browserOptions = new ChromeOptions();
+                        ((ChromeOptions)browserOptions).AddArgument("--headless");
+                        ((ChromeOptions)browserOptions).AddArgument("disable-gpu");
+                    }
+
+                    Browser = new ChromeDriver((ChromeOptions)browserOptions);
                     break;
-                default:
-                    Browser = new ChromeDriver();
+
+                case BrowserTypes.Edge:
+                    if (browserOptions != null)
+                        Browser = new EdgeDriver((EdgeOptions)browserOptions);
+                    else
+                        Browser = new EdgeDriver();
+                    break;
+
+                case BrowserTypes.Safari:
+                    if (browserOptions != null)
+                        Browser = new SafariDriver((SafariOptions)browserOptions);
+                    else
+                        Browser = new SafariDriver();
+                    break;
+
+                case BrowserTypes.Opera:
+                    if (browserOptions != null)
+                        Browser = new OperaDriver((OperaOptions)browserOptions);
+                    else
+                        Browser = new OperaDriver();
                     break;
             }
             BrowserWait = new WebDriverWait(Browser, TimeSpan.FromSeconds(defaultTimeOut));
-        }
-
-        //private static FirefoxOptions GetFireFoxoptions()
-        //{
-
-        //}
-
-        private static InternetExplorerOptions GetIEOptions()
-        {
-            InternetExplorerOptions options = new InternetExplorerOptions();
-            options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
-            options.IgnoreZoomLevel = true;
-            options.EnableNativeEvents = true;
-            options.EnsureCleanSession = true;
-            options.ElementScrollBehavior = InternetExplorerElementScrollBehavior.Bottom;
-            return options;
         }
 
         public static string TakeScreenShot(string filename)
@@ -123,6 +157,7 @@ namespace Automation.Framework.Core
                  rollOnFileSizeLimit: true)
              .CreateLogger();
         }
+
         public static void StopBrowser()
         {
             Browser.Quit();
@@ -131,4 +166,3 @@ namespace Automation.Framework.Core
         }
     }
 }
-

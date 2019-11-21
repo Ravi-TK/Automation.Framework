@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Automation.Framework.Core
+﻿namespace Automation.Framework.Core
 {
     public class EnvirnomentConfig
     {
@@ -19,12 +15,7 @@ namespace Automation.Framework.Core
             {
                 return _testEnvirnoment;
             }
-            //set
-            //{
-            //    _testEnvirnoment = value;
-            //}
         }
-
     }
 
     public enum Envirnoment

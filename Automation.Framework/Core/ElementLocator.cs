@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Automation.Framework.Core
+﻿namespace Automation.Framework.Core
 {
     public enum ElementLocator
     {

@@ -1,11 +1,6 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Automation.Framework.ComponentHelper.Interfaces
+﻿namespace Automation.Framework.ComponentHelper.Interfaces
 {
-    interface IKeyboardAction
+    internal interface IKeyboardAction
     {
         void SingleCommandKeyAction(string cmdKey, string character);
 

@@ -1,7 +1,5 @@
-﻿using System;
-using Automation.Framework.ComponentHelper.Interfaces;
+﻿using Automation.Framework.ComponentHelper.Interfaces;
 using OpenQA.Selenium;
-
 
 namespace Automation.Framework.ComponentHelper
 {

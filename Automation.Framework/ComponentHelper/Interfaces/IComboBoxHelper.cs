@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace Automation.Framework.ComponentHelper.Interfaces
 {
-    interface IComboBoxHelper
+    internal interface IComboBoxHelper
     {
         void SelectElementByIndex(IWebElement element, int index);
+
         void SelectElementByValue(IWebElement element, string value);
+
         void SelectElementByVIsibleText(IWebElement element, string visibleText);
+
         bool IsComboBoxEnabled(IWebElement element);
     }
 }

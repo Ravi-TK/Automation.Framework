@@ -1,10 +1,6 @@
 ﻿using Automation.Framework.ComponentHelper.Interfaces;
 using Automation.Framework.Core;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.ComponentHelper
 {
