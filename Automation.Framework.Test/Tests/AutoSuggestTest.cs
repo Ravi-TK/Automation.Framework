@@ -3,9 +3,6 @@ using Automation.Framework.Core;
 using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using Unity;
 
@@ -30,12 +27,8 @@ namespace Automation.Framework.Test.Tests
             _AutoSuggestPage.Helper.ButtonHelper.ClickButton(Driver.Browser.FindElement(By.XPath("//form[@action='/action_page.php']/input[@type='submit']")));
 
             Thread.Sleep(2000);
-            string txt =_AutoSuggestPage.Helper.TextBoxHelper.GetTextBoxText(Driver.Browser.FindElement(By.XPath("//body[@class='w3-container']/div[1]")));
+            string txt = _AutoSuggestPage.Helper.TextBoxHelper.GetTextBoxText(Driver.Browser.FindElement(By.XPath("//body[@class='w3-container']/div[1]")));
             Assert.AreEqual(txt, "myCountry=Uruguay ");
         }
-
-
-
-
     }
 }

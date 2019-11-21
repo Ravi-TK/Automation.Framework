@@ -1,18 +1,14 @@
-﻿using Automation.Framework.Test.Pages;
+﻿using Automation.Framework.Base;
+using Automation.Framework.Core;
+using Automation.Framework.Test.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Unity;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Automation.Framework.Base;
-using Automation.Framework.Core;
 
 namespace Automation.Framework.Test.Tests
 {
     [TestClass]
     public class BrowserTest
     {
-
         private W3schoolPage _browserPage = UnityContainerFactory.GetContainer().Resolve<W3schoolPage>();
 
         [TestMethod]
@@ -56,7 +52,6 @@ namespace Automation.Framework.Test.Tests
             _browserPage.Helper.BrowserHelper.BrowserMaximise();
             string browserTitle = _browserPage.Helper.BrowserHelper.GetBrowserTitle();
             Assert.AreEqual(browserTitle, "HTML Tutorial");
-
         }
 
         [TestMethod]
@@ -67,7 +62,6 @@ namespace Automation.Framework.Test.Tests
             _browserPage.Helper.ButtonHelper.ClickButton(_browserPage.NextButtonWebElement);
             string browserurl = _browserPage.Helper.BrowserHelper.GetBrowserUrl();
             Assert.AreEqual(browserurl, "https://www.w3schools.com/html/html_intro.asp");
-
         }
 
         [TestMethod]
@@ -96,7 +90,6 @@ namespace Automation.Framework.Test.Tests
             _browserPage.Helper.BrowserHelper.SwitchToParent();
             string url = _browserPage.Helper.BrowserHelper.GetBrowserUrl();
             Assert.AreEqual(url, "https://www.w3schools.com/jsref/met_win_open.asp");
-
         }
 
         [TestMethod]
@@ -117,6 +110,5 @@ namespace Automation.Framework.Test.Tests
             Driver.Browser.Close();
             _browserPage.Helper.BrowserHelper.SwitchToWindow(0);
         }
-
     }
 }

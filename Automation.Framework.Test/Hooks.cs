@@ -11,7 +11,6 @@ namespace Automation.Framework.Test
     [TestClass]
     public class Hooks
     {
-
         [AssemblyInitialize]
         public static void BeforeTestRun(TestContext context)
         {
@@ -23,7 +22,6 @@ namespace Automation.Framework.Test
         [TestInitialize]
         public void BeforeTest()
         {
-            
         }
 
         [TestCleanup]
@@ -37,6 +35,5 @@ namespace Automation.Framework.Test
         {
             Driver.StopBrowser();
         }
-
     }
 }

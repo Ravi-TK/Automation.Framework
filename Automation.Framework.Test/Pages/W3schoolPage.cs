@@ -1,16 +1,14 @@
 ﻿using Automation.Framework.Base;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Automation.Framework.Test.Pages
 {
-    class W3schoolPage : BasePage
+    internal class W3schoolPage : BasePage
     {
         public W3schoolPage(IWebDriver driver) : base(driver)
         {
         }
+
         public string tryItUrSelfPageUrl = "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test";
         public IWebElement TryItURselfButtonWebElement => WaitTillElementExist("//div[@id='main']//a[@href='tryit.asp?filename=tryhtml_button_test']");
 
@@ -88,7 +86,5 @@ namespace Automation.Framework.Test.Pages
         public IWebElement TryItURselfBrowserButtonWebElement => WaitTillElementDisplayed("//div[@id='main']//a[@href='tryit.asp?filename=tryjsref_win_open']");
 
         public IWebElement tryItButtonWebElement => WaitTillElementDisplayed("//body/button[.='Try it']");
-
-
     }
 }

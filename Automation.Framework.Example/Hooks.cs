@@ -2,10 +2,6 @@
 using Automation.Framework.Core;
 using Automation.Framework.Example.Pages;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using TechTalk.SpecFlow;
 using Unity;
 using Unity.Lifetime;
@@ -18,11 +14,11 @@ namespace Automation.Framework.Example
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            //registering page classes. 
+            //registering page classes.
             UnityContainerFactory.GetContainer().RegisterType<LandingPage>(new ContainerControlledLifetimeManager());
             UnityContainerFactory.GetContainer().RegisterType<SignInPage>(new ContainerControlledLifetimeManager());
 
-            //choosing the browser to run 
+            //choosing the browser to run
             Driver.StartBrowser(BrowserTypes.Chrome);
 
             //Registering BrowserDriver
@@ -34,6 +30,5 @@ namespace Automation.Framework.Example
         {
             Driver.StopBrowser();
         }
-
     }
 }
