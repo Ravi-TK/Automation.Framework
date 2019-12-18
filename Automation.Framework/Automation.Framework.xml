@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Automation.Framework</name>
+    </assembly>
+    <members>
+        <member name="F:Automation.Framework.Base.BasePage.Helper">
+            <summary>
+            Helper Componnents object
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.Base.BasePage.WaitTillElementExist(System.String,Automation.Framework.Core.ElementLocator,System.Int32)">
+            <summary>
+            Create a instance of Selenium webElement
+            </summary>
+            <param name="locator">Locator path</param>
+            <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+            <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
+            <returns> an instance of the webelement</returns>
+        </member>
+        <member name="M:Automation.Framework.Base.BasePage.WaitTillElementDisplayed(System.String,Automation.Framework.Core.ElementLocator,System.Int32)">
+            <summary>
+            Create a instance of Selenium webElement
+            </summary>
+            <param name="locator">Locator path</param>
+            <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+            <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
+            <returns> an instance of the webelement</returns>
+        </member>
+        <member name="M:Automation.Framework.Base.BasePage.WaitTillElementStalenessOf(System.String,Automation.Framework.Core.ElementLocator,System.Int32)">
+            <summary>
+            Create a instance of Selenium webElement when element staleness is gone 
+            </summary>
+            <param name="locator">Locator path</param>
+            <param name="elementLocatorType"> Locator Type i.e. Xpath,Id,etc.</param>
+            <param name="TimeOutForFindingElement"> Number of seconds an element should wait for a webelement to display or exists </param>
+        </member>
+        <member name="T:Automation.Framework.Base.Helpers">
+            <summary>
+             Helper Componnents 
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.AutoSuggestHelper">
+            <summary>
+            Autosuggest Helper components
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.MouseActionHelper">
+            <summary>
+            Mouse Action Helper components  
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.KeyBoardActionHelper">
+            <summary>
+            KeyBoard Action Helper components 
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.BrowserHelper">
+            <summary>
+            Browser Helper Components 
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.ButtonHelper">
+            <summary>
+            All Button Helper Component
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.CheckBoxHelper">
+            <summary>
+            CheckBox Helper Components
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.ComboBoxHelper">
+            <summary>
+            ComboBox Helper Components
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.JavaScriptHelper">
+            <summary>
+            JavaScript Helper Components 
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.LabelHelper">
+            <summary>
+            Label Helper Components
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.LinkHelper">
+            <summary>
+            Link Helper Components 
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.RadioButtonHelper">
+            <summary>
+            Radio Button Helper Components
+            </summary>
+        </member>
+        <member name="F:Automation.Framework.Base.Helpers.TextBoxHelper">
+            <summary>
+            TextBox Helper Components
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.Base.UnityContainerFactory.GetContainer">
+            <summary>
+            Retrieves existing unity container 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.AutoSuggest.SelectItemInList(OpenQA.Selenium.IWebElement,System.String,System.String,System.String)">
+            <summary>
+            Selects an item from a Autosuggest drop down
+            </summary>
+            <param name="dropDownList">dropdown webelement</param>
+            <param name="DropDownListEntriesLocator">item listing index in drop down after entering search char</param>
+            <param name="searchChar">search characters</param>
+            <param name="itemToClick"> item to click </param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.GetBrowserTitle">
+            <summary>
+            Retrieves browser title 
+            </summary>
+            <returns>Browser Title</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.GetBrowserUrl">
+            <summary>
+            Retrieves browser's current URL
+            </summary>
+            <returns>URL</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.BrowserMaximise">
+            <summary>
+            Maximize the browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.BrowserMinimise">
+            <summary>
+            Minimize browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.BrowserRefresh">
+            <summary>
+            Refreshes browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.MoveBackward">
+            <summary>
+            Moves backward in the browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.MoveForward">
+            <summary>
+            Moves forward in the browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.Navigate(System.String)">
+            <summary>
+            Navigate to specified URL
+            </summary>
+            <param name="url"> URL </param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.SwitchToWindow(System.Int32)">
+            <summary>
+            Switches to specified window
+            </summary>
+            <param name="index">Window index</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.SwitchToParent">
+            <summary>
+            Switches to the parent window 
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Browser.SwitchToFrame(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Switches webdriver to specified iframe component
+            </summary>
+            <param name="frameElement">IFrame WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Button.ClickButton(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clicks on specified button
+            </summary>
+            <param name="element">Button WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Button.GetButtonText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieve text displayed on specified button
+            </summary>
+            <param name="element">Button Welement</param>
+            <returns>Button Text</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Button.IsButtonEnabled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if the element is enabled or not 
+            </summary>
+            <param name="element">Button WebElement </param>
+            <returns>Return True if button is enabled else False</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.CheckBox.ClickCheckBox(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clicks on specified checkbox
+            </summary>
+            <param name="element">Checkbox Element</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.CheckBox.IsCheckboxChecked(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if checkbox is Checked
+            </summary>
+            <param name="element">Checkbox Element</param>
+            <returns>Returns True if checkbox is checked else False</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.CheckBox.IsCheckboxEnbaled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if checkbox enabled
+            </summary>
+            <param name="element">checkbox element</param>
+            <returns>Returns true if checkbox is enabled else False</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.ClickCancelOnPopup">
+            <summary>
+            Clicks cancel button on the pop up in the browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.ClickOkOnPopup">
+            <summary>
+            Clicks Ok button on the pop up in the browser
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.GetPopUpText">
+            <summary>
+            Retrieves text displayed in the pop up in the browser
+            </summary>
+            <returns>Text in the pop up </returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.IsPopUpPresent">
+            <summary>
+            Determines if the pop up is present in the browser 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.ScrollToElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Scroll to specified WebElement
+            </summary>
+            <param name="ele">WebElement to focus</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.JavascriptHelp.TypeTextInPopUp(System.String)">
+            <summary>
+            Enters specified text in the pop up in the browser
+            </summary>
+            <param name="inputText">Text to be displayed in the pop up </param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.KeyBoardAction.DoubleCommandKeyAction(System.String,System.String,System.String)">
+            <summary>
+            Automate the key pressing combination e.g. Ctrl+Shift+T
+            </summary>
+            <param name="cmdKey1">Command Key 1</param>
+            <param name="cmdKey2">COmmand Key 2</param>
+            <param name="character">Char</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.KeyBoardAction.SingleCommandKeyAction(System.String,System.String)">
+            <summary>
+            Automate command and key pressing event
+            </summary>
+            <param name="cmdKey">Command key </param>
+            <param name="character">Char</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.KeyBoardAction.SingleCommandKeyAction(System.String,System.String,System.String)">
+            <summary>
+            Automate command and multiple key pressing action 
+            </summary>
+            <param name="cmdKey">Command key</param>
+            <param name="character1">Key 1</param>
+            <param name="character2">Keys 2</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Label.ClickOnLabel(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clicks on the Label
+            </summary>
+            <param name="element">Label WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Label.GetLabelText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieves text of the Label
+            </summary>
+            <param name="element"> Label WebElement</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Label.IsLabelEnabled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if label is enabled
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Link.ClickOnLink(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clicks on Link
+            </summary>
+            <param name="element">Link WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Link.GetLinkText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieves Link's text
+            </summary>
+            <param name="element">Link WebElement</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Link.IsLinkEnabled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if link is enabled 
+            </summary>
+            <param name="element">Link's WebElement</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.MouseAction.ClickNHoldNDrop(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebElement,System.Int32,System.Int32)">
+            <summary>
+            Clicks on a element, hold and drop it on the specified location
+            </summary>
+            <param name="Element"></param>
+            <param name="trg"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.MouseAction.DoubleClickOnElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Double clicks on the specified element 
+            </summary>
+            <param name="element">Item to be double clicked, its WebElement </param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.MouseAction.DragNDrop(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebElement)">
+            <summary>
+            Drag an element and drop it in the spcified element
+            </summary>
+            <param name="src">Source item WebElement</param>
+            <param name="trg">Target item WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.RadioButton.ClickOnRadioButton(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clicks on specified radio button 
+            </summary>
+            <param name="element">Radio button WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.RadioButton.IsRadioButtonEnabled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if the radio button is enabled
+            </summary>
+            <param name="element">Radio button WebElement</param>
+            <returns>Returns True if Radio button is enabled else False</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.RadioButton.IsRadioButtonSelected(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if the Radio button is already selected
+            </summary>
+            <param name="element">Radio button WebElement</param>
+            <returns>Return True </returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Text.ClearTextBoxText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clears text of specified TextBox
+            </summary>
+            <param name="element">Textbox WebElement</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Text.GetTextBoxText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieves text inside specified TextBox  
+            </summary>
+            <param name="element">Textbox WebElement</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Text.IsTextBoxEnabled(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines if TextBox is enabled
+            </summary>
+            <param name="element">TextBox WebElement</param>
+            <returns>Retruns True if Textbox is enabled else False</returns>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Text.TypeInTextBox(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Enters specified text in the specified Textbox WebElement
+            </summary>
+            <param name="element">Textbox WebElement</param>
+            <param name="text">Text to be enetered in the textbox</param>
+        </member>
+        <member name="T:Automation.Framework.Core.BrowserTypes">
+            <summary>
+            Browser Types 
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.Core.Driver.StartBrowser(Automation.Framework.Core.BrowserTypes,System.Int32,System.Object)">
+            <summary>
+            Creates an istance of selected browser
+            </summary>
+            <param name="browserType"> Type of Browser user wants to create </param>
+            <param name="defaultTimeOut">Time until the webdriver should try to create an instance of webdriver</param>
+            <param name="browserOptions"> Options for the browser </param>
+        </member>
+        <member name="M:Automation.Framework.Core.Driver.TakeScreenShot(System.String)">
+            <summary>
+            Captures Screenshot wand has specified filename 
+            </summary>
+            <param name="filename"> Screenshot FileName </param>
+            <returns>Returns the FielName</returns>
+        </member>
+        <member name="M:Automation.Framework.Core.Driver.CreateLog(System.String)">
+            <summary>
+            Create a serilog Instance 
+            </summary>
+            <param name="fileName">log File name </param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Automation.Framework.Core.Driver.StopBrowser" -->
+        <member name="T:Automation.Framework.Core.ElementLocator">
+            <summary>
+            Element Locator Stratergy 
+            </summary>
+        </member>
+        <member name="M:Automation.Framework.Core.EnvirnomentConfig.setTestEnvirnoment(Automation.Framework.Core.Envirnoment)">
+            <summary>
+            Set Envirnoment 
+            </summary>
+            <param name="testEnviro">Envirnoment to test in</param>
+        </member>
+        <member name="T:Automation.Framework.Core.Envirnoment">
+            <summary>
+            Envirnoment Type
+            </summary>
+        </member>
+    </members>
+</doc>
