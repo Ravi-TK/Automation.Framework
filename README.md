@@ -22,7 +22,7 @@ To register Driver Instance-
 To create a WebElement -
 
         public IWebElement <ElementName> => WaitTillElementDisplayed((Locator_path,Locator_Stratergy_Type, number of seconds to wait for the element); 
-In above we can look up for the web element by Id,Css,Name,LinkText,PartialLinkText,Xpath,ClassName and Tag
+In above we can look up for the web element by Id, Css, Name, LinkText, PartialLinkText, Xpath, ClassName and Tag
 
 
 This Framework can also be used in conjuction with Specflow, Mstest, Nunit, Xunit. Please see the example project for Implementation.  
