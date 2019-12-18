@@ -14,7 +14,7 @@
     <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="77.0.3865.4000" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="79.0.3945.3600" />
     <PackageReference Include="SpecFlow.MsTest" Version="3.1.21-beta" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.1.21-beta" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
