@@ -26,3 +26,6 @@ In above we can look up for the web element by Id, Css, Name, LinkText, PartialL
 
 
 This Framework can also be used in conjuction with Specflow, Mstest, Nunit, Xunit. Please see the example project for Implementation.  
+
+
+/Automation.Framework.png
