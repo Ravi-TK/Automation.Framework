@@ -25,7 +25,4 @@ To create a WebElement -
 In above we can look up for the web element by Id, Css, Name, LinkText, PartialLinkText, Xpath, ClassName and Tag
 
 
-This Framework can also be used in conjuction with Specflow, Mstest, Nunit, Xunit. Please see the example project for Implementation.  
-
-
-/Automation.Framework.png
+This Framework can also be used in conjuction with Specflow, Mstest, Nunit, Xunit. Please see the example project for Implementation.
