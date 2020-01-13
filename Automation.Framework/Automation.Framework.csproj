@@ -4,11 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Authors>Ravi Kota</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2.5</Version>
+    <Version>1.0.2.9</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>This Package offers a simple and elgeant framework to use selenium to control web form elements.</Description>
     <PackageProjectUrl>https://github.com/Ravi-TK/Automation.Framework</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Ravi-TK/Automation.Framework</RepositoryUrl>
+    <PackageReleaseNotes>Fixed scoping errors</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -160,68 +160,68 @@ namespace Automation.Framework.Base
     }
 
     /// <summary>
-    ///  Helper Componnents 
+    ///  Helper Components 
     /// </summary>
     public class Helpers
     {
         /// <summary>
-        /// Autosuggest Helper components
+        /// Auto suggest Helper components
         /// </summary>
-        private readonly AutoSuggest AutoSuggestHelper = new AutoSuggest();
+        public AutoSuggest AutoSuggestHelper = new AutoSuggest();
 
         /// <summary>
         /// Mouse Action Helper components  
         /// </summary>
-        private readonly MouseAction MouseActionHelper = new MouseAction();
+        public MouseAction MouseActionHelper = new MouseAction();
 
         /// <summary>
         /// KeyBoard Action Helper components 
         /// </summary>
-        private readonly KeyBoardAction KeyBoardActionHelper = new KeyBoardAction();
+        public KeyBoardAction KeyBoardActionHelper = new KeyBoardAction();
 
         /// <summary>
         /// Browser Helper Components 
         /// </summary>
-        private readonly Browser BrowserHelper = new Browser();
+        public Browser BrowserHelper = new Browser();
 
         /// <summary>
         /// All Button Helper Component
         /// </summary>
-        private readonly Button ButtonHelper = new Button();
+        public Button ButtonHelper = new Button();
 
         /// <summary>
         /// CheckBox Helper Components
         /// </summary>
-        private readonly CheckBox CheckBoxHelper = new CheckBox();
+        public CheckBox CheckBoxHelper = new CheckBox();
 
         /// <summary>
         /// ComboBox Helper Components
         /// </summary>
-        private readonly ComboBox ComboBoxHelper = new ComboBox();
+        public ComboBox ComboBoxHelper = new ComboBox();
 
         /// <summary>
         /// JavaScript Helper Components 
         /// </summary>
-        private readonly JavascriptHelp JavaScriptHelper = new JavascriptHelp();
+        public JavascriptHelp JavaScriptHelper = new JavascriptHelp();
 
         /// <summary>
         /// Label Helper Components
         /// </summary>
-        private readonly  Label LabelHelper = new Label();
+        public  Label LabelHelper = new Label();
 
         /// <summary>
         /// Link Helper Components 
         /// </summary>
-        private readonly Link LinkHelper = new Link();
+        public Link LinkHelper = new Link();
 
         /// <summary>
         /// Radio Button Helper Components
         /// </summary>
-        private readonly RadioButton RadioButtonHelper = new RadioButton();
+        public RadioButton RadioButtonHelper = new RadioButton();
 
         /// <summary>
         /// TextBox Helper Components
         /// </summary>
-        private readonly Text TextBoxHelper = new Text();
+        public Text TextBoxHelper = new Text();
     }
 }

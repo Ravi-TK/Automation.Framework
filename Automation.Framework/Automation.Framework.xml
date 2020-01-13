@@ -37,12 +37,12 @@
         </member>
         <member name="T:Automation.Framework.Base.Helpers">
             <summary>
-             Helper Componnents 
+             Helper Components 
             </summary>
         </member>
         <member name="F:Automation.Framework.Base.Helpers.AutoSuggestHelper">
             <summary>
-            Autosuggest Helper components
+            Auto suggest Helper components
             </summary>
         </member>
         <member name="F:Automation.Framework.Base.Helpers.MouseActionHelper">
