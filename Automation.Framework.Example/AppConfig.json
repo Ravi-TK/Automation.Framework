@@ -1,8 +1,26 @@
 {
-  "Dev": "",
-  "SysTest": "",
-  "UAT": "",
-  "Staging": "",
+  "Browser": "Chrome",
+  "Environment": "SysTest",
+
+  //Chrome
+  //ChromeHeadless
+  //Edge
+  //Firefox
+  //FirefoxHeadless
+  //InternetExplorer
+  //Opera
+  //Safari
+
+  //Dev
+  //SysTest
+  //UAT
+  //Staging
+
+  "BaseURLDev": "",
+  "BaseURLSysTest": "",
+  "BaseURLUAT": "",
+  "BaseURLStaging": "",
+
   "DevDB": "",
   "SysTestDB": "",
   "UATDB": "",

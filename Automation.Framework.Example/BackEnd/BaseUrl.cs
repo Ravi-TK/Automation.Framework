@@ -10,7 +10,7 @@ namespace Automation.Framework.Example.BackEnd
     {
         public static string Url = "";
 
-        internal static void SetBaseUrl(Envirnoment testEnvironment = Envirnoment.SysTest)
+        public static void SetBaseUrl(Envirnoment testEnvironment = Envirnoment.SysTest)
         {
             var config = new ConfigurationBuilder()
                              .AddJsonFile("AppConfig.json")
