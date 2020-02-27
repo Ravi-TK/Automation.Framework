@@ -100,6 +100,11 @@
             TextBox Helper Components
             </summary>
         </member>
+        <member name="F:Automation.Framework.Base.Helpers.WindowHelper">
+            <summary>
+            Helper Methods to interact with the windows dialogs
+            </summary>
+        </member>
         <member name="M:Automation.Framework.Base.UnityContainerFactory.GetContainer">
             <summary>
             Retrieves existing unity container 
@@ -380,6 +385,13 @@
             </summary>
             <param name="element">Textbox WebElement</param>
             <param name="text">Text to be enetered in the textbox</param>
+        </member>
+        <member name="M:Automation.Framework.ComponentHelper.Window.FileUploader(System.String,System.String)">
+            <summary>
+            Interacts with windows form to select file from windows explorer
+            </summary>
+            <param name="fileLocation"> Location of file to be uploaded</param>
+            <param name="windowTitle">Title of windows dialog, by default set to "Open" </param>
         </member>
         <member name="T:Automation.Framework.Core.BrowserTypes">
             <summary>

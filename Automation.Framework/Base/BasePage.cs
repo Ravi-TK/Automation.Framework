@@ -223,5 +223,10 @@ namespace Automation.Framework.Base
         /// TextBox Helper Components
         /// </summary>
         public Text TextBoxHelper = new Text();
+
+        /// <summary>
+        /// Helper Methods to interact with the windows dialogs
+        /// </summary>
+        public Window WindowHelper = new Window();
     }
 }

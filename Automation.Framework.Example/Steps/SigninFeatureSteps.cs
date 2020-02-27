@@ -1,6 +1,9 @@
 ﻿using Automation.Framework.Base;
+using Automation.Framework.Core;
 using Automation.Framework.Example.Pages;
 using FluentAssertions;
+using OpenQA.Selenium;
+using System.Threading;
 using TechTalk.SpecFlow;
 using Unity;
 
@@ -32,7 +35,6 @@ namespace Automation.Framework.Example.Steps
             _signInPage.Helper.BrowserHelper.GetBrowserUrl().Should().Contain(_signInPage.signInPageUrl);
 
             //hard coding the test data, only for demo purpose
-
             _signInPage.Helper.TextBoxHelper.TypeInTextBox(_signInPage.UserName_TextBoxWebElement, "TestUserName");
             _signInPage.Helper.TextBoxHelper.TypeInTextBox(_signInPage.Paswword_TextBoxWebElement, "Testpassword");
 

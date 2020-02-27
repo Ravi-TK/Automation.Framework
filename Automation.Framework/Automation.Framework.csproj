@@ -4,12 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Authors>Ravi Kota</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2.9</Version>
+    <Version>1.0.3.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>This Package offers a simple and elgeant framework to use selenium to control web form elements.</Description>
     <PackageProjectUrl>https://github.com/Ravi-TK/Automation.Framework</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Ravi-TK/Automation.Framework</RepositoryUrl>
-    <PackageReleaseNotes>Fixed scoping errors</PackageReleaseNotes>
+    <PackageReleaseNotes>Added helper methods to handle windows dialogs. Added file uploader method to interact with windows dislog.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -23,6 +23,12 @@
     <PackageReference Include="Serilog" Version="2.9.0-dev-01124" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0-dev-00850" />
     <PackageReference Include="Unity" Version="5.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Include=".\FileUploadScript.exe">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>
   </ItemGroup>
 
 </Project>
