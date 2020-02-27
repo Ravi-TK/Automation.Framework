@@ -16,6 +16,8 @@ To register Driver Instance-
 
             UnityContainerFactory.GetContainer().RegisterInstance<IWebDriver>(Driver.Browser);
 
+![](Automation.Framework.png)
+
 -Serilog is used to create test logs. Please see the example project -> Hooks for implementation. 
 
 -SeleniumExtras.WaitHelpers waits for a element for x seconds before it is displayed/exists. This mitigates the need to create implicit waits. Please see exmaple project -> Page Class for implementation. 
@@ -26,5 +28,3 @@ In above we can look up for the web element by Id, Css, Name, LinkText, PartialL
 
 
 This Framework can also be used in conjuction with Specflow, Mstest, Nunit, Xunit. Please see the example project for Implementation.
-
-https://github.com/Ravi-TK/Automation.Framework/wiki
