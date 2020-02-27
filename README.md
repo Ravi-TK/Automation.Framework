@@ -16,7 +16,7 @@ To register Driver Instance-
 
             UnityContainerFactory.GetContainer().RegisterInstance<IWebDriver>(Driver.Browser);
 
-![](Automation.Framework.png)
+![](Automation.Framework.Architecture.png)
 
 -Serilog is used to create test logs. Please see the example project -> Hooks for implementation. 
 
