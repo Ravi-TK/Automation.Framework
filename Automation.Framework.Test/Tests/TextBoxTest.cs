@@ -37,34 +37,8 @@ namespace Automation.Framework.Test.Tests
             _textBoxPage.Helper.ButtonHelper.ClickButton(_textBoxPage.submitButtonWebelement);
 
             string resulttxt = _textBoxPage.Helper.TextBoxHelper.GetTextBoxText(_textBoxPage.checkboxResultWebElement);
-            Assert.AreEqual(resulttxt, "FirstName=Test1&LastName=Test2 ");
+            Assert.AreEqual(resulttxt, "fname=Test1&lname=Test2 ");
         }
-
-        //[TestMethod]
-        //public void GetTextBoxText()
-        //{
-        //    //_textBoxPage.Helper.BrowserHelper.Navigate(_textBoxPage.w3schoolTextBoxUrl);
-        //    //_textBoxPage.Helper.BrowserHelper.BrowserMaximise();
-        //    //_textBoxPage.Helper.BrowserHelper.SwitchToFrame(_textBoxPage.demoFrameWebElement);
-
-        //    _textBoxPage.Helper.BrowserHelper.Navigate("https://www.w3schools.com/html/html_forms.asp");
-        //    _textBoxPage.Helper.BrowserHelper.BrowserMaximise();
-
-        //    _textBoxPage.Helper.TextBoxHelper.TypeInTextBox(Driver.Browser.FindElement(By.XPath("//div[@id='main']/input[1]")), "Test1");
-
-        //    string txt = _textBoxPage.Helper.TextBoxHelper.GetTextBoxText(Driver.Browser.FindElement(By.XPath("//div[@id='main']/input[1]")));
-
-        //    string txt2 = Driver.Browser.FindElement(By.XPath("//div[@id='main']/input[1]")).Text;
-
-        //    Assert.AreEqual(txt, "Test1");
-
-        //    //_textBoxPage.Helper.TextBoxHelper.ClearTextBoxText(_textBoxPage.firstNameTextboxWebelement);
-        //    //_textBoxPage.Helper.TextBoxHelper.TypeInTextBox(_textBoxPage.firstNameTextboxWebelement, "Test1");
-
-        //    //string txt = _textBoxPage.Helper.TextBoxHelper.GetTextBoxText(_textBoxPage.firstNameTextboxWebelement);
-        //    //Assert.AreEqual(txt, "Test1");
-
-        //}
 
         [TestMethod]
         public void ClearTextBoxText()

@@ -32,9 +32,9 @@ namespace Automation.Framework.Test.Pages
 
         public string w3schoolMouseActionUrl = "http://demos.telerik.com/kendo-ui/dragdrop/events";
 
-        public IWebElement firstNameTextboxWebelement => WaitTillElementDisplayed("//form[@action='/action_page.php']/input[@name='FirstName']");
+        public IWebElement firstNameTextboxWebelement => WaitTillElementDisplayed("/html//input[@id='fname']");
 
-        public IWebElement lastNameTextboxWebelement => WaitTillElementDisplayed("//form[@action='/action_page.php']/input[@name='LastName']");
+        public IWebElement lastNameTextboxWebelement => WaitTillElementDisplayed("/html//input[@id='lname']");
 
         public IWebElement textBoxSubmitWebElement => WaitTillElementDisplayed("//form[@action='/action_page.php']/input[@value='Submit']");
 
