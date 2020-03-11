@@ -1,7 +1,6 @@
 # Automation.Framework
 
-This framework is built on top of selenium webdriver api and unity. The framework uses selenium to offer helper methods which can control 
-various web form elements. 
+This framework is built on top of selenium webdriver api and unity. The framework uses selenium to offer helper methods which can control various web form elements. 
 
 Please see example project for the implementation of helper methods. 
 
