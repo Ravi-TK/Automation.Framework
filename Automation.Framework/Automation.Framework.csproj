@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Ravi Kota</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.3.0</Version>
