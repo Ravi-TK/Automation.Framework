@@ -1,9 +1,10 @@
 # Automation.Framework
 
-This framework is built on top of selenium webdriver api and unity. The framework uses selenium to offer helper methods which can control 
-various web form elements. 
+This framework is built on top of selenium webdriver api and unity. The framework uses selenium to offer helper methods which can control various web form elements. 
 
 Please see example project for the implementation of helper methods. 
+
+above project is also available as nuget package : https://www.nuget.org/packages/Automation.Framework/
 
 Unity is responsible for creating and resolving the page objects. This mitigates the need for passing around page objects in methods to 
 carry an operation. Please see the example project -> hooks & Page Class to see the implementation. 
