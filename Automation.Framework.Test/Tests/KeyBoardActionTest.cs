@@ -24,16 +24,16 @@ namespace Automation.Framework.Test.Tests
             //    (By.XPath("/html/body/div[1]/div[2]/div[@class='w3-right']"))
             //    .SendKeys(Keys.Control + "a");
 
-            Actions act = new Actions(Driver.Browser);
+            //Actions act = new Actions(Driver.Browser);
 
-            act.KeyDown(Keys.Control)
-                .SendKeys("T")
-                .KeyUp(Keys.Control)
-                .Build()
-                .Perform();
+            //act.KeyDown(Keys.Control)
+            //    .SendKeys("T")
+            //    .KeyUp(Keys.Control)
+            //    .Build()
+            //    .Perform();
 
 
-            //_KeyBoardActionPage.Helper.KeyBoardActionHelper.SingleCommandKeyAction(Keys.LeftControl, "t");
+            _KeyBoardActionPage.Helper.KeyBoardActionHelper.SingleCommandKeyAction(Keys.LeftControl, "t");
             _KeyBoardActionPage.Helper.BrowserHelper.SwitchToWindow(1);
         }
 
