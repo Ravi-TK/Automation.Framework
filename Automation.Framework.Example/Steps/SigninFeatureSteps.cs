@@ -25,9 +25,9 @@ namespace Automation.Framework.Example.Steps
 
         [When(@"I click on sign in button")]
         public void WhenIClickOnSignInButton()
-        {
-            Thread.Sleep(2500);
+        { 
             _landingPage.Helper.ButtonHelper.ClickButton(_landingPage.SignInButton_WebElement);
+            Thread.Sleep(2500);
         }
 
         [Then(@"I am navigated to BBC sign in page")]
