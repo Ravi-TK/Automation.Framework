@@ -71,6 +71,7 @@ namespace Automation.Framework.Test.Pages
         public IWebElement NextButtonWebElement => WaitTillElementDisplayed("//div[@id='main']/div[2]/a[@href='html_intro.asp']");
 
         public IWebElement PreviousButtonWebElement => WaitTillElementDisplayed("//div[@id='main']/div[2]/a[@href='default.asp']");
+       
         public IWebElement TryItURselfcheckboxButtonWebElement => WaitTillElementExist("//div[@id='main']//a[@href='tryit.asp?filename=tryhtml5_input_type_checkbox']");
 
         public IWebElement RunButtonWebElement => WaitTillElementExist("/html//div[@class='w3-bar']/button[.='Run »']");
