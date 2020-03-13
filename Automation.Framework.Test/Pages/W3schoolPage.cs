@@ -10,6 +10,7 @@ namespace Automation.Framework.Test.Pages
         }
 
         public string tryItUrSelfPageUrl = "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test";
+        
         public IWebElement TryItURselfButtonWebElement => WaitTillElementExist("//div[@id='main']//a[@href='tryit.asp?filename=tryhtml_button_test']");
 
         public string tryItUrSelfCheckboxUrl = "https://www.w3schools.com/tags/att_input_type_checkbox.asp";
