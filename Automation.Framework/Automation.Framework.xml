@@ -268,6 +268,7 @@
             </summary>
             <param name="cmdKey">Command key </param>
             <param name="character">Char</param>
+            <remark> Ctrl+T does not work for chrome browser. </remark>
         </member>
         <member name="M:Automation.Framework.ComponentHelper.KeyBoardAction.SingleCommandKeyAction(System.String,System.String,System.String)">
             <summary>

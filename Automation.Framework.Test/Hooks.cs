@@ -16,7 +16,7 @@ namespace Automation.Framework.Test
         [AssemblyInitialize]
         public static void BeforeTestRun(TestContext context)
         {
-            Driver.StartBrowser(BrowserTypes.ChromeHeadless,30, GetChromeOptions());
+            Driver.StartBrowser(BrowserTypes.Chrome,30, GetChromeOptions());
             UnityContainerFactory.GetContainer().RegisterType<W3schoolPage>(new ContainerControlledLifetimeManager());
             UnityContainerFactory.GetContainer().RegisterInstance<IWebDriver>(Driver.Browser);
         }

@@ -30,6 +30,7 @@ namespace Automation.Framework.ComponentHelper
         /// </summary>
         /// <param name="cmdKey">Command key </param>
         /// <param name="character">Char</param>
+        /// <remark> Ctrl+T does not work for chrome browser. </remark>
         public void SingleCommandKeyAction(string cmdKey, string character)
         {
             Actions act = new Actions(Driver.Browser);

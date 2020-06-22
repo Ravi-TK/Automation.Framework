@@ -1,5 +1,5 @@
 {
-  "Browser": "ChromeHeadless",
+  "Browser": "InternetExplorer",
   "Environment": "SysTest",
 
   //Chrome
