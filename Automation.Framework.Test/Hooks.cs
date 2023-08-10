@@ -13,6 +13,7 @@ namespace Automation.Framework.Test
     [TestClass]
     public class Hooks
     {
+        //it is not working
         [AssemblyInitialize]
         public static void BeforeTestRun(TestContext context)
         {
