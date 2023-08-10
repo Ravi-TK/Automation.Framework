@@ -24,6 +24,7 @@ namespace Automation.Framework.Test
 
         private static InternetExplorerOptions GetIEOptions()
         {
+            //commments
             InternetExplorerOptions options = new InternetExplorerOptions();
             options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
             options.IgnoreZoomLevel = true;
